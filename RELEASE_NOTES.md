@@ -4,6 +4,15 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.4.0 — 2026-06-27
+
+- Nuovo menu **Sistema → Aggiornamento**: l'admin vede la versione installata e quella disponibile, le note di rilascio, e decide se aggiornare ora oppure aspettare. Niente push automatici da Emironet.
+- Tre modalita' di aggiornamento configurabili via `EHUB_UPDATE_METHOD`:
+  - `disabled` (default sicuro): istruzioni manuali via SSH
+  - `docker_socket`: pull + restart via Python docker lib (richiede mount socket)
+  - `host_script`: invoca uno script bash sull'host appliance
+- Le release stable vengono pubblicate da Emironet sul repo pubblico [e-hub-releases](https://github.com/eliaferrarii/e-hub-releases) tramite `version.json`. La build `:latest` su GHCR continua a essere quella di sviluppo (auto-pubblicata ad ogni commit), ma i clienti vedono solo le versioni marcate stable.
+
 ## v3.3.2 — 2026-06-27
 
 - Fix Caddyfile in modalita' internal: il sito di default usa `localhost` invece di catch-all `:443`. Risolve `SEC_E_ILLEGAL_MESSAGE` su Windows / schannel durante l'handshake TLS quando il container e' in modalita' prod (Caddy attivo) senza dominio configurato.
