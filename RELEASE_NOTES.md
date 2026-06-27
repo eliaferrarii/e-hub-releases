@@ -4,10 +4,15 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
-## v3.4.2 — 2026-06-27 (TEST FITTIZIO)
+## v3.4.3 — 2026-06-27 (TEST FITTIZIO HAPPY PATH)
 
-Bump di test per verificare il flusso "Aggiornamento disponibile" sul menu admin.
-Verra' rollbackato a 3.4.1 dopo il test.
+Bump di test per verificare il flusso "Aggiorna ora" end-to-end: pull dell'immagine `:latest`. Verra' rollbackato a 3.4.2 dopo il test.
+
+## v3.4.2 — 2026-06-27
+
+- Helper dialog custom (`appConfirm`, `appAlert`, `appPrompt`, `appToast`): tutti i prossimi prompt/confirm/alert vanno con questi al posto dei popup browser, coerenti col resto della dashboard.
+- Sostituiti i 2 confirm browser introdotti nei menu Rete & Dominio (rinnovo cert) e Aggiornamento (avvia update).
+- Fix: l'endpoint `POST /api/admin/update/apply` ora ritorna stringhe pulite in `detail` invece di dict (no piu' "Errore: [object Object]" nella UI).
 
 ## v3.4.1 — 2026-06-27
 
