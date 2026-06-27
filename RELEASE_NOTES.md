@@ -4,6 +4,15 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.4.2 — 2026-06-27 (TEST FITTIZIO)
+
+Bump di test per verificare il flusso "Aggiornamento disponibile" sul menu admin.
+Verra' rollbackato a 3.4.1 dopo il test.
+
+## v3.4.1 — 2026-06-27
+
+- Testi UI piu' brevi nei menu Rete & Dominio, Aggiornamento, onboarding licenza demo. Tagliato ~40% di stringhe descrittive ridondanti.
+
 ## v3.4.0 — 2026-06-27
 
 - Nuovo menu **Sistema → Aggiornamento**: l'admin vede la versione installata e quella disponibile, le note di rilascio, e decide se aggiornare ora oppure aspettare. Niente push automatici da Emironet.
