@@ -4,6 +4,15 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.22 — 2026-06-28
+
+- Menu Aggiornamento ridisegnato: versione installata -> nuova con freccia, niente piu' riquadro 'Metodo'.
+- Menu Integrazioni e MCP server: ora mostrano solo le voci incluse nella licenza.
+- Backup locale + ripristino: nel menu Aggiornamento puoi creare backup, scaricarli e ripristinare uno stato precedente. Backup automatico prima di ogni 'Aggiorna ora'.
+- Licenza scaduta: blocco immediato se il manager conferma la scadenza; i 14 giorni di grace valgono solo se il manager e' offline.
+- Canale beta opzionale: nel menu Aggiornamento puoi iscriverti al canale beta per provare le anteprime.
+- Barra aggiornamento piu' fluida e affidabile (no falsi completamenti).
+
 ## v3.6.15 — 2026-06-28
 
 - Risolto: attivando il canale beta l'hub continuava a vedere solo le versioni stable. Ora riceve correttamente le anteprime.
