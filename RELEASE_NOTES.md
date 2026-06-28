@@ -4,6 +4,10 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.6 — 2026-06-28
+
+- Risolto: se la licenza scade domani il menu mostra 1 giorno e non 2.
+
 ## v3.6.5 — 2026-06-28
 
 - Il bottone "Aggiorna ora" nel menu Aggiornamento ora applica davvero l'aggiornamento: scarica la nuova versione e riavvia il servizio in autonomia. La pagina si riconnette dopo qualche secondo.
