@@ -4,6 +4,10 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.12 — 2026-06-28
+
+- L'aggiornamento automatico ora funziona anche se il pacchetto di rilascio e' privato (autenticazione via token interna, niente azione richiesta al cliente).
+
 ## v3.6.11 — 2026-06-28
 
 - Quando esce una nuova versione di E-HUB ricevi una mail e vedi un popup in basso a destra (puoi disabilitarlo dal menu Notifiche).
