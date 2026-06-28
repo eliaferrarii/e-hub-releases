@@ -4,6 +4,37 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.4 — 2026-06-28
+
+- Risolto: con la licenza in scadenza l'avviso in cima copriva il contenuto dei menu di sistema (Aggiornamento, Scripts, Rete) lasciando la pagina vuota.
+
+## v3.6.3 — 2026-06-27
+
+- Nel menu Licenza il campo Utenti mostra ora il valore attuale rispetto al massimo consentito dalla licenza (es. `7 / 10`).
+
+## v3.6.2 — 2026-06-27
+
+- Il dominio del cliente viene riconosciuto automaticamente in fase di provisioning e mostrato nella scheda licenza, senza richiederlo a mano.
+
+## v3.6.1 — 2026-06-27
+
+- I menu di sistema (Dashboard, Profilo, Licenza, Log, ecc.) sono ora visibili anche agli utenti non admin: prima sparivano se mancava un permesso.
+- Nel menu Licenza il conteggio utenti diventa rosso se hai superato il massimo della licenza.
+
+## v3.6.0 — 2026-06-27
+
+- Nuovo pulsante "Cambia chiave" nel menu Licenza: l'admin puo' incollare una nuova chiave (es. da demo a pagato) senza riavviare nulla.
+- I menu di sistema restano sempre attivi a prescindere dalla licenza: solo le integrazioni di business vengono limitate.
+
+## v3.5.1 — 2026-06-27
+
+- Migliorata l'affidabilita' del collegamento al server licenze Emironet.
+
+## v3.5.0 — 2026-06-27
+
+- Nuovo menu **Licenza** con piano, scadenza, giorni rimanenti, moduli abilitati e ultima verifica. Pulsante "Verifica ora" per controllare subito lo stato.
+- Avviso giallo se la licenza scade entro 30 giorni, rosso se entro 7. Schermata di blocco se la licenza e' scaduta: contattare Emironet per il rinnovo.
+
 ## v3.4.3 — 2026-06-27 (TEST FITTIZIO HAPPY PATH)
 
 Bump di test per verificare il flusso "Aggiorna ora" end-to-end: pull dell'immagine `:latest`. Verra' rollbackato a 3.4.2 dopo il test.
