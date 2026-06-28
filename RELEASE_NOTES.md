@@ -4,6 +4,11 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.5 — 2026-06-28
+
+- Il bottone "Aggiorna ora" nel menu Aggiornamento ora applica davvero l'aggiornamento: scarica la nuova versione e riavvia il servizio in autonomia. La pagina si riconnette dopo qualche secondo.
+- Nessun aggiornamento automatico: l'hub si aggiorna solo quando l'admin clicca il bottone.
+
 ## v3.6.4 — 2026-06-28
 
 - Risolto: con la licenza in scadenza l'avviso in cima copriva il contenuto dei menu di sistema (Aggiornamento, Scripts, Rete) lasciando la pagina vuota.
