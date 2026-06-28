@@ -4,6 +4,10 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.9 — 2026-06-28
+
+- Durante l'aggiornamento ora vedi solo la percentuale e la barra. A fine aggiornamento la pagina si ricarica subito.
+
 ## v3.6.8 — 2026-06-28
 
 - Al termine dell'aggiornamento la barra mostra un conto alla rovescia prima di ricaricare la pagina, cosi' fai in tempo a leggere l'esito.
