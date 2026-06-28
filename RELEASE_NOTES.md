@@ -4,6 +4,10 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.23 — 2026-06-28
+
+- L'hub comunica al portale Emironet la versione installata e il numero utenti correnti ad ogni verifica licenza.
+
 ## v3.6.22 — 2026-06-28
 
 - Menu Aggiornamento ridisegnato: versione installata -> nuova con freccia, niente piu' riquadro 'Metodo'.
