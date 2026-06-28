@@ -4,6 +4,10 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.7 — 2026-06-28
+
+- Quando clicchi "Aggiorna ora" vedi una barra di avanzamento con le fasi (scaricamento, riavvio, completato), cosi' sai sempre cosa sta succedendo.
+
 ## v3.6.6 — 2026-06-28
 
 - Risolto: se la licenza scade domani il menu mostra 1 giorno e non 2.
