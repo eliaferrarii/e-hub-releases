@@ -4,6 +4,13 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.10 — 2026-06-28
+
+- La barra dell'aggiornamento avanza piu' velocemente e la pagina si ricarica appena il servizio e' tornato online.
+- Risolto: dopo il login si vedevano tutti i menu finche' non si cambiava pagina; ora la licenza filtra subito le voci.
+- Quando ricarichi la pagina (F5 o dopo un aggiornamento) resti sul menu in cui eri, non vai piu' sempre alla Dashboard.
+- Risolto: per qualche secondo si intravedeva la Dashboard prima del login al primo caricamento.
+
 ## v3.6.9 — 2026-06-28
 
 - Durante l'aggiornamento ora vedi solo la percentuale e la barra. A fine aggiornamento la pagina si ricarica subito.
