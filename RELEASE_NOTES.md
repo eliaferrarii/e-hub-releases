@@ -4,6 +4,10 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.13 — 2026-06-28
+
+- Nel menu Aggiornamento puoi attivare "Iscrivimi al canale beta" per ricevere versioni in anteprima. Disattivabile in qualsiasi momento per tornare al canale stabile.
+
 ## v3.6.12 — 2026-06-28
 
 - L'aggiornamento automatico ora funziona anche se il pacchetto di rilascio e' privato (autenticazione via token interna, niente azione richiesta al cliente).
