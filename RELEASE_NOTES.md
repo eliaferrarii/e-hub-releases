@@ -4,6 +4,11 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.15 — 2026-06-28
+
+- Risolto: attivando il canale beta l'hub continuava a vedere solo le versioni stable. Ora riceve correttamente le anteprime.
+- La barra dell'aggiornamento avanza fluida senza salti, niente banner duplicati in alto, ricarica solo al 100%.
+
 ## v3.6.13 — 2026-06-28
 
 - Nel menu Aggiornamento puoi attivare "Iscrivimi al canale beta" per ricevere versioni in anteprima. Disattivabile in qualsiasi momento per tornare al canale stabile.
