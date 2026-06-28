@@ -4,6 +4,10 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.11 — 2026-06-28
+
+- Quando esce una nuova versione di E-HUB ricevi una mail e vedi un popup in basso a destra (puoi disabilitarlo dal menu Notifiche).
+
 ## v3.6.10 — 2026-06-28
 
 - La barra dell'aggiornamento avanza piu' velocemente e la pagina si ricarica appena il servizio e' tornato online.
