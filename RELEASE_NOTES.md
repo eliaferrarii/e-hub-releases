@@ -4,6 +4,10 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.31 — 2026-06-30
+
+- Le indicazioni tecniche "Stato server" e "Ultimo aggiornamento" nel fondo della sidebar restano visibili solo agli amministratori.
+
 ## v3.6.30 — 2026-06-30
 
 - Dopo un aggiornamento gli amministratori continuano a vedere l'elenco delle novita'. Gli utenti standard ricevono un avviso piu' semplice che conferma soltanto l'aggiornamento dell'hub.
