@@ -4,6 +4,10 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.30 — 2026-06-30
+
+- Dopo un aggiornamento gli amministratori continuano a vedere l'elenco delle novita'. Gli utenti standard ricevono un avviso piu' semplice che conferma soltanto l'aggiornamento dell'hub.
+
 ## v3.6.29 — 2026-06-30
 
 - Le voci tecniche del menu Sistema (Licenza, MCP server, Log, Data e Ora) sono ora riservate agli amministratori. Gli utenti standard hanno una sidebar piu' pulita: solo Profilo e Feedback.
