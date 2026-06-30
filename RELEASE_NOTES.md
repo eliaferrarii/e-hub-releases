@@ -4,6 +4,14 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.25 — 2026-06-30
+
+- Le nuove installazioni si collegano al portale Emironet sul nuovo dominio e-hub.cloud.
+
+## v3.6.24 — 2026-06-29
+
+- Le nuove installazioni si agganciano al portale Emironet senza configurazione manuale.
+
 ## v3.6.23 — 2026-06-28
 
 - L'hub comunica al portale Emironet la versione installata e il numero utenti correnti ad ogni verifica licenza.
