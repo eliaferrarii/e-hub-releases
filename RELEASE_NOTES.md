@@ -4,6 +4,14 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.29 — 2026-06-30
+
+- Le voci tecniche del menu Sistema (Licenza, MCP server, Log, Data e Ora) sono ora riservate agli amministratori. Gli utenti standard hanno una sidebar piu' pulita: solo Profilo e Feedback.
+
+## v3.6.28 — 2026-06-30
+
+- La configurazione del backup verso un servizio cloud esterno e' stata rimossa. Il backup locale prima degli aggiornamenti resta attivo come prima.
+
 ## v3.6.27 — 2026-06-30
 
 - Nuova voce Feedback nel menu: ogni utente puo' segnalare bug, suggerire nuove funzionalita' o lasciare un'altra nota. Il messaggio arriva direttamente al team di supporto Emironet.
