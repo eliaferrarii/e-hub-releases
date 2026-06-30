@@ -4,6 +4,10 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.6.26 — 2026-06-30
+
+- Il blocco anti tentativi di accesso riconosce ora l'IP reale del cliente, non quello del proxy davanti all'hub. Cosi' un attacco da un singolo IP non blocca piu' tutti gli utenti legittimi.
+
 ## v3.6.25 — 2026-06-30
 
 - Le nuove installazioni si collegano al portale Emironet sul nuovo dominio e-hub.cloud.
