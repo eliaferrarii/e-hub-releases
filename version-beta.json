@@ -1,10 +1,10 @@
 {
-  "latest_version": "3.15.5",
+  "latest_version": "3.15.6",
   "image": "ghcr.io/eliaferrarii/e-hub",
   "image_tag": "beta",
-  "released_at": "2026-07-03T10:00:00Z",
+  "released_at": "2026-07-06T12:00:00Z",
   "release_notes_url": "https://github.com/eliaferrarii/e-hub-releases/blob/main/RELEASE_NOTES_BETA.md",
   "min_version_required": "3.0.0",
   "channel": "beta",
-  "signature": "11qNe7yH+wRT7z9w2Yx9FE1+GoPW8SrFBOSOLiQT+0ZEswoxpm8SU+MYHVBsZz9gqVPrLMTB/FXsP6N71Z0lDQ=="
+  "signature": "eBvUHk6EydHDK4FW5nqn+lGjH7VFXalvanPod+tKyuKLCTRpL067PmRnpmoMU5CXlP9/+da2Gvoj9GpAtbc7Dg=="
 }
