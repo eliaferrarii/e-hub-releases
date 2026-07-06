@@ -1,5 +1,5 @@
 {
-  "latest_version": "0.21.4",
+  "latest_version": "0.21.5",
   "image": "ghcr.io/eliaferrarii/ehub-manager",
   "image_tag": "latest",
   "released_at": "2026-07-02T19:30:00Z",
