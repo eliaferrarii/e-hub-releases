@@ -4,6 +4,45 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.15.28 — 2026-07-07
+
+Rilascio corposo con novita' importanti (43 versioni beta consolidate).
+
+**E-Desk (nuovo)**
+- Nuova sezione "Il mio Desk": vista Kanban dei ticket Zoho Desk con drag & drop tra colonne per cambiare stato, ordinate secondo il flusso italiano (Nuovo → Assegnato → In lavorazione → In attesa del cliente → Risposto → In attesa del commerciale → Scalato al fornitore → Da pianificare → Pianificato → Attesa Generica → Chiuso).
+- Vista dettaglio ticket integrata nell'hub con sidebar sinistra contenente: contatto, anagrafica CRM completa (nome, ruolo, contatti, indirizzo, azienda, settore, sito web, sede), commerciale (owner CRM), contratti attivi con badge di scadenza.
+- Le immagini nelle email dei ticket ora sono visibili (proxy verso Zoho autenticato).
+- Finestra di risposta al cliente in stile client mail, con "Da / A / Oggetto" precompilati automaticamente dal dipartimento.
+- Nota interna in finestra dedicata, senza campi email.
+- Menzioni Zoho tra operatori (`@Nome Cognome`) ora rese leggibili nei commenti.
+- Notifiche in basso a destra all'arrivo di nuovi ticket o aggiornamenti sui ticket assegnati (funzionano su qualsiasi vista dell'hub).
+- Aggiornamento automatico ogni 20 secondi + dopo ogni azione, senza refresh manuale.
+
+**Annunci amministratore**
+- Gli annunci pubblicati dall'admin diventano un banner persistente in cima a qualsiasi pagina, non piu' un widget della dashboard.
+- Nessun utente puo' piu' chiuderli o rimuoverli.
+- Se l'admin elimina un annuncio, questo sparisce entro un minuto anche a tutti gli altri utenti collegati, senza reload.
+
+**Documenti / ricerca**
+- Ricerca documenti significativamente migliorata su corpora grandi: quando piu' PDF trattano lo stesso argomento, il chatbot non "dimentica" piu' file che restano invisibili nei primi risultati.
+- Nuovo matching sul nome del file: se la domanda contiene una parola presente nel titolo del PDF (es. `manuale_A5E.pdf`), i chunk di quel documento vengono spinti in alto anche quando il corpo non contiene quella parola.
+- Caricamento file: puoi ora selezionare piu' documenti contemporaneamente dal dialog di scelta file (Ctrl/Shift+click), sia in caricamento veloce sia in accodamento background.
+- Il limite di file accodabili in coda passa da 10 a 100.
+- Contatore chunk indicizzati sopra la tabella documenti con barra di progresso verso il target consigliato (10.000, configurabile).
+
+**Sessioni utente**
+- Le sessioni di login sopravvivono al riavvio dell'hub: quando aggiorni l'hub e il servizio si riavvia, resti loggato senza doverti riautenticare (funziona anche per E-Desk e per la connessione Zoho personale).
+
+**Sidebar riducibile**
+- Nuovo bottone in alto a destra del menu per ridurlo a sole icone e guadagnare spazio orizzontale.
+- La preferenza viene ricordata dal browser.
+
+**ACL utenti**
+- Il pannello "Accessi modulo" ora elenca tutte le voci del menu, comprese quelle riservate all'amministratore (marcate "SOLO ADMIN" con avviso).
+- E-Desk e Feedback diventano moduli assegnabili ai singoli utenti.
+
+---
+
 ## v3.6.31 — 2026-06-30
 
 - Le indicazioni tecniche "Stato server" e "Ultimo aggiornamento" nel fondo della sidebar restano visibili solo agli amministratori.
