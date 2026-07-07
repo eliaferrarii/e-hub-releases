@@ -4,6 +4,19 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.15.31 — 2026-07-07
+
+Micro-rilascio di manutenzione: fix critico per gli update on-prem + polish annunci.
+
+**Update on-prem: i valori nuovi arrivano davvero**
+- Prima, alcuni limiti fissati come variabili d'ambiente al primo avvio del container (es. "solo 10 file in coda contemporaneamente") non venivano piu' cambiati dagli aggiornamenti successivi: Watchtower preservava le vecchie env e le nuove versioni di codice le vedevano ignorate. Per gli hub on-prem senza SSH non c'era modo di risolvere.
+- Ora quei valori sono decisi dall'immagine stessa (dal codice), non dalle env: al primo restart post-update i tenant on-prem e cloud ricevono i nuovi limiti in maniera identica. Il limite "10 file in coda" scompare (diventa 100), la barra chunk arriva a 10.000, i rate limit di ricerca/upload/webhook si allineano tutti alla configurazione aggiornata.
+
+**Annunci amministratore**
+- Il pulsante "Gestisci" degli annunci ora apre una finestra dedicata con l'elenco degli annunci pubblicati e un pulsante rosso per eliminarli. Sotto la lista c'e' il form per pubblicarne uno nuovo (titolo, testo, tipo Informazione/Avviso/Urgente) invece delle vecchie tre finestrine in sequenza.
+
+---
+
 ## v3.15.28 — 2026-07-07
 
 Rilascio corposo con novita' importanti (43 versioni beta consolidate).
