@@ -4,6 +4,53 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v3.17.103 — 2026-07-15
+
+Rilascio maggiore consolidato (oltre 70 versioni beta). Alcune novita' importanti richiedono attenzione: la sezione **Utenti** e' stata rifatta e la voce di menu **Chat** e **Documenti** ora arrivano dallo Store integrazioni.
+
+**Utenti: gestione tramite email**
+- Sezione "Utenti" spostata dalla vecchia posizione dentro "Configurazione" a un tab dedicato nel gruppo "Sistema": e' piu' facile trovarla.
+- L'identita' di un utente ora e' la sua **email** (non piu' lo username). Un utente puo' essere creato solo se gli si assegna un'indirizzo email valido, e la password temporanea viene inviata automaticamente a quell'indirizzo.
+- Aggiunti campi **Nome** e **Cognome** con pulsanti "Modifica nome" / "Modifica email" per aggiornare i dati senza ricreare l'account.
+- Pulsanti nella tabella: **Mail benvenuto** (rimanda le credenziali iniziali), **Mail reset password** (invia link per reimpostarla), **Elimina**.
+- Pallino di stato online accanto a ogni utente, aggiornato in tempo reale.
+- Migrazione automatica: gli utenti esistenti conservano le credenziali. La prima volta che l'admin apre il pannello, l'account admin di sistema riceve un placeholder che va aggiornato con l'email vera.
+
+**Chat integrata tra utenti (modulo Store)**
+- Nuovo modulo **Chat** installabile dallo Store, libero (nessuna licenza richiesta).
+- Messaggistica 1-1 tra utenti dell'hub: sidebar con l'elenco contatti, area conversazione a destra, ricerca per nome/email.
+- Widget "Follow me" opzionale: cliccando sull'icona a fianco al nome del contatto, la chat si "aggancia" in basso a destra e resta visibile su TUTTE le pagine dell'hub (dashboard, documenti, ticket, integrazioni). Cosi' non serve tornare al tab Chat per rispondere.
+- Notifiche di messaggi non letti sulla voce del menu.
+
+**Documenti come modulo Store**
+- Il pannello **Lettura/Scrittura File** (caricamento e indicizzazione documenti) e' passato ad essere un modulo Store installabile invece che una sezione core sempre presente.
+- Funzionalita' identiche a prima: chi lo aveva installato non si accorge di nulla. Per chi non lo usa, la voce di menu non compare piu' e non consuma spazio.
+
+**Store integrazioni consolidato**
+- Nuovi moduli disponibili nello Store: **Chat**, **Lettura/Scrittura File**, **Magazzino Emironet** (con seriali per ordine e login personale con account Zoho), **Home Assistant 2.1**, **Fortinet FortiCare**, **CDR TWT**, **WhatsApp**.
+- Il catalogo si aggiorna automaticamente ogni volta che apri lo Store: nuove versioni dei moduli installati compaiono con un pulsante "Aggiorna".
+- Ogni modulo dichiara con quale versione minima dell'hub e' compatibile: se il tuo hub e' troppo vecchio, l'install viene bloccato con un messaggio chiaro invece di rompere l'UI.
+- Firma Ed25519 sul bundle: se qualcuno alterasse il pacchetto lungo la strada, l'install fallisce.
+
+**Zoho: accesso per singolo operatore**
+- Sezione "Il mio Desk" e "Magazzino": ogni operatore fa login con il suo account Zoho personale (OAuth) e vede solo i suoi ticket / ordini, senza usare le credenziali centrali dell'hub.
+- Le configurazioni Zoho a livello di hub (per il bot AI) restano invariate.
+
+**Rimozioni**
+- **Calendario Zoho** e **Collaboration 7** non sono piu' presenti nel core dell'hub: non erano utilizzati dai clienti attivi. Rimossi per pulizia.
+- La vecchia "bot key" (chiave API bot) e' stata deprecata: non veniva piu' utilizzata dall'esterno.
+
+**Migliorie di sicurezza e stabilita'**
+- Nuovo controllo automatico per bloccare tentativi ripetuti di login errato (protezione anti-brute force).
+- Aggiornamento in-app: quando clicchi "Aggiorna ora" dallo Store, l'hub mostra ora una pagina di attesa dedicata mentre il container si riavvia (non piu' schermata 502 del reverse proxy).
+- Migliorata la ricerca ibrida sui documenti (miglior ranking quando piu' file trattano lo stesso argomento).
+
+**Hotfix inclusi in questo rilascio**
+- Ripristinate funzioni di SMS, Webhook e Zoho Creator che erano state rimosse per errore durante la pulizia di Calendario Zoho / Collaboration 7 (v3.17.98-102).
+- Menu Utenti ora si popola correttamente anche dopo aggiornamento (v3.17.103).
+
+---
+
 ## v3.15.31 — 2026-07-07
 
 Micro-rilascio di manutenzione: fix critico per gli update on-prem + polish annunci.
