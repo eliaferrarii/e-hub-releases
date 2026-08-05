@@ -1,10 +1,10 @@
 {
-  "latest_version": "0.27.1",
+  "latest_version": "0.27.2",
   "image": "ghcr.io/eliaferrarii/ehub-manager",
   "image_tag": "latest",
-  "released_at": "2026-07-28T18:45:00Z",
+  "released_at": "2026-08-05T14:32:56Z",
   "release_notes_url": "https://github.com/eliaferrarii/e-hub-releases/blob/main/RELEASE_NOTES_MANAGER.md",
   "min_version_required": "0.10.0",
   "channel": "stable",
-  "signature": "kOTWsDn5aFYrJqLfUqYfnxZ5siDy01lZX6ILRtPRZJqQBLy2QV7m+/5E45ip1tercAP8iFmelllFnX66JFBoCA=="
+  "signature": "J8AStBcTIVl0UFvemgke5uoGz1ZzoloUEPldfp+fEG3FzdBxFPvqI9Me7Kf4bKP2vEVfXMBzXCAdk6rpIWMdDw=="
 }
