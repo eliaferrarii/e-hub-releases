@@ -4,6 +4,20 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.12 — 2026-08-11
+
+**Accesso con Microsoft: da quali organizzazioni**
+- In Configurazione → Sicurezza c'e' ora un campo per indicare da quali
+  organizzazioni Microsoft accettare gli accessi. Si incolla l'ID della
+  directory (tenant) dell'organizzazione, come si legge nel suo portale Entra.
+- Lasciandolo vuoto l'accesso resta possibile da qualunque organizzazione al
+  mondo, che e' il comportamento di sempre: la schermata ora lo dice
+  esplicitamente invece di lasciarlo sottinteso.
+- Serve a chi apre l'accesso ai propri clienti: ognuno entra solo dalla
+  propria organizzazione.
+
+---
+
 ## v26.8.11 — 2026-08-11
 
 **Accesso con Microsoft**
