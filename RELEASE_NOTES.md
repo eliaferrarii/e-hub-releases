@@ -4,6 +4,21 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.11 — 2026-08-11
+
+**Accesso con Microsoft**
+- L'accesso riconosce l'utente dall'indirizzo di posta, e prendeva quello dal
+  campo sbagliato del token. Microsoft ne fornisce due: uno e' l'identificativo
+  con cui si entra, e per averlo su un certo dominio bisogna possedere quel
+  dominio e dimostrarlo; l'altro e' un recapito che l'amministratore della
+  propria organizzazione scrive a mano, senza nessuna verifica. Veniva letto
+  il secondo. Ora si legge il primo, e il secondo solo quando Microsoft
+  certifica che il dominio appartiene davvero a chi lo dichiara.
+- Gli accessi con account Microsoft personali continuano a funzionare come
+  prima.
+
+---
+
 ## v26.8.10 — 2026-08-11
 
 Secondo giro della revisione del codice: i difetti di gravita' media, sul
