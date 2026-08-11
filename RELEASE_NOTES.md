@@ -4,6 +4,19 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.13 — 2026-08-11
+
+**Correzione al campo introdotto nella 26.8.12**
+- Il campo delle organizzazioni Microsoft ammesse mostrava come esempio un
+  identificativo reale. Copiarlo avrebbe autorizzato l'organizzazione
+  sbagliata: i propri utenti fuori, quelli di un'altra azienda dentro. Ora il
+  campo mostra solo la forma da rispettare, e il testo avverte di non inserire
+  identificativi di cui non si conosce il proprietario.
+- Se hai gia' salvato qualcosa in quel campo, controlla che sia l'ID directory
+  **della tua** organizzazione, quello che leggi nel tuo portale Entra.
+
+---
+
 ## v26.8.12 — 2026-08-11
 
 **Accesso con Microsoft: da quali organizzazioni**
