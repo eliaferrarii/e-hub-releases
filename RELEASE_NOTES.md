@@ -1,6 +1,17 @@
-# E-HUB Release Notes
+# Note di rilascio di Mosaico
 
 Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' vecchia.
+
+---
+
+## v26.8.8 — 2026-08-11
+
+**Aggiornamenti molto piu' leggeri**
+- I modelli di riconoscimento non fanno piu' parte del pacchetto dell'applicazione: stanno sul servizio condiviso del server. L'aggiornamento scarica **4,6 GB in meno** e si applica molto piu' in fretta.
+- Di conseguenza il servizio di riconoscimento non e' piu' opzionale: e' la sola strada, e il codice che teneva in vita l'alternativa e' stato rimosso.
+
+**La ricerca regge meglio i guasti**
+- Se il riconoscimento non risponde, la ricerca restituisce i risultati per parole chiave invece di dare errore.
 
 ---
 
