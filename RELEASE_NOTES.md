@@ -4,6 +4,35 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.9 — 2026-08-11
+
+Rilascio di sola sicurezza e correzioni, nato da una revisione completa del
+codice di Mosaico e di tutti i moduli. **Va applicato.**
+
+**I permessi per modulo ora valgono davvero**
+- Assegnare o togliere un modulo a un utente cambiava la voce nel menu ma non
+  bloccava le richieste dietro: i moduli installati dallo Store non erano
+  coperti dal controllo dei permessi. Ora lo sono tutti.
+- Restava un modo per aggirare il controllo anche sui moduli integrati.
+  Chiuso: la decisione sui permessi non dipende piu' da cosa il chiamante
+  scrive nella richiesta.
+
+**Automazioni e assistenti**
+- Gli strumenti che i moduli mettono a disposizione degli assistenti AI ora
+  chiedono la chiave macchina, come gia' facevano quelli integrati.
+
+**Dati esposti**
+- Rimosso un indirizzo rimasto da una vecchia dimostrazione che restituiva il
+  testo dei documenti indicizzati senza chiedere credenziali.
+- La chiave di licenza non viene piu' mostrata a tutti gli utenti connessi, ma
+  solo agli amministratori.
+
+**Primo avvio di una macchina nuova**
+- La configurazione iniziale falliva e lasciava la macchina in uno stato da cui
+  non si poteva riprovare. Corretto.
+
+---
+
 ## v26.8.8 — 2026-08-11
 
 **Aggiornamenti molto piu' leggeri**
