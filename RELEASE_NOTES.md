@@ -4,6 +4,23 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.6 — 2026-08-11
+
+Rilascio che porta il riconoscimento vocale e la ricerca semantica **fuori dalle singole istanze**.
+
+**I modelli non stanno piu' dentro la tua istanza**
+- Dove il server mette a disposizione il servizio condiviso, ricerca, assistente e trascrizioni lo usano invece di caricare i propri modelli dentro ogni istanza. La memoria occupata scende in modo netto e le trascrizioni non si rubano piu' la macchina a vicenda.
+- I risultati sono identici a prima: stessi vettori, stesso ordine dei risultati, stesse trascrizioni.
+- Dove il servizio non c'e', non cambia nulla.
+
+**La ricerca regge meglio i guasti**
+- Se il riconoscimento non risponde, la ricerca restituisce i risultati per parole chiave invece di dare errore. Prima l'intera ricerca falliva.
+
+**Numerazione**
+- Da questo rilascio il canale stabile adotta la forma anno.mese.progressivo, gia' in uso sul canale beta. La versione precedente era la 3.17.103.
+
+---
+
 ## v3.17.103 — 2026-07-15
 
 Rilascio maggiore consolidato (oltre 70 versioni beta). Alcune novita' importanti richiedono attenzione: la sezione **Utenti** e' stata rifatta e la voce di menu **Chat** e **Documenti** ora arrivano dallo Store integrazioni.
