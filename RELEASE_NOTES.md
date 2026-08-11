@@ -4,6 +4,56 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.10 — 2026-08-11
+
+Secondo giro della revisione del codice: i difetti di gravita' media, sul
+sistema e su sette moduli. Nessuna funzione nuova, solo cose che tornano a
+funzionare o che smettono di essere piu' aperte del dovuto.
+
+**Permessi**
+- Gli strumenti che l'assistente AI usa per creare, modificare e cancellare
+  schede su Zoho Creator chiedevano il permesso di sola lettura.
+- Il sorgente degli script non e' piu' leggibile da chiunque sia connesso:
+  modificarli era gia' riservato agli amministratori, ora lo e' anche
+  leggerli.
+- La chiamata di diagnostica dell'accesso non crea piu' credenziali e non
+  rivela nulla di una macchina che non sia di chi la interroga.
+- Il registro delle operazioni, letto dall'assistente, non riporta piu'
+  l'indirizzo di rete di chi ha fatto l'operazione.
+
+**Telefonia**
+- Il collegamento del telefono nel browser verso il centralino interno ora
+  richiede una sessione valida.
+- Due macchine con il centralino configurato non si scollegano piu' gli
+  interni a vicenda: ce n'e' uno solo per installazione, e ora lo dice invece
+  di lasciar fare.
+- Gli strumenti dell'assistente che telefonano verificano di comandare
+  l'apparato registrato dalla propria macchina.
+
+**Cose che non funzionavano e nessuno lo sapeva**
+- I promemoria condivisi in conversazione diretta non venivano recapitati.
+- Una conversazione con l'assistente che aveva usato uno strumento si rompeva
+  per sempre al messaggio successivo.
+- La cancellazione dei dati personali su richiesta non guardava dentro la Base
+  di Conoscenza: rispondeva "nessun dato trovato" lasciando i documenti dov'erano.
+- La scadenza delle registrazioni liberava circa la meta' dello spazio che
+  diceva di liberare: cancellava l'originale e lasciava le copie di lavoro.
+- Il recupero dei lavori dopo un riavvio poteva rifare da capo una
+  trascrizione che stava gia' girando.
+- Con la Company API Key di Wildix il recupero dello storico chiamate non
+  partiva mai.
+- Ogni riavvio della raccolta dati dal centralino lasciava vivo il processo
+  precedente.
+
+**Accesso con Microsoft**
+- Si puo' ora indicare da quali organizzazioni Microsoft accettare gli accessi.
+  Senza questa indicazione l'accesso resta possibile da qualunque
+  organizzazione, e ogni accesso lo segnala nei log: se la vostra
+  registrazione dell'app e' limitata a una sola organizzazione non serve
+  fare niente, altrimenti conviene impostarla.
+
+---
+
 ## v26.8.9 — 2026-08-11
 
 Rilascio di sola sicurezza e correzioni, nato da una revisione completa del
