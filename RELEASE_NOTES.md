@@ -4,6 +4,38 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.16 e v26.8.17 — 2026-08-12
+
+Chiudono l'ultimo blocco della revisione del codice. Da aggiornare insieme ai
+moduli, che escono con le correzioni corrispondenti.
+
+**Mail**
+- La funzione che gli script usano per mandare mail non applicava nessun
+  controllo: niente elenco dei destinatari ammessi, niente quote, niente
+  validazione degli indirizzi. C'erano due strade per mandare posta dallo
+  stesso programma, e la piu' comoda era quella senza freni. Ora passa dalla
+  stessa strada dell'invio normale.
+- Il nome del mittente indicato dallo script non ha piu' effetto: lo decide la
+  configurazione della macchina, in un posto solo.
+
+**Dashboard**
+- I contatori dei lavori restavano a zero da quando i documenti sono usciti dal
+  programma principale. Ora contano anche i lavori della Base di Conoscenza.
+
+**Indirizzi pubblici**
+- La ricostruzione dell'indirizzo pubblico dell'istanza era scritta in quattro
+  punti e solo uno controllava di stare dietro un proxy fidato. Negli altri
+  bastava una richiesta con intestazioni falsificate per far costruire al
+  programma un indirizzo altrui, che finiva dentro i dati firmati di un
+  accesso. Ora la regola sta in un posto solo.
+
+**Identificativo macchina**
+- Viene controllato nella forma prima di essere usato: finisce in nomi di
+  archivi e in percorsi su disco, e una stringa qualsiasi non deve poter
+  passare per un identificativo.
+
+---
+
 ## v26.8.15 — 2026-08-12
 
 **Pulizia dopo il passaggio alla 26.8.8**
