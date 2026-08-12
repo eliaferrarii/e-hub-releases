@@ -4,6 +4,17 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.18 — 2026-08-12
+
+**Menu**
+- "Magazzino Emironet" e "Inventario" stavano in due punti diversi dell'elenco
+  a sinistra, pur essendo due facce dello stesso lavoro. Ora stanno sotto una
+  voce "Magazzino" che si apre e si chiude, come gia' fatto per i KPI. Si
+  ricorda se l'hai lasciata aperta, e se nessuna delle due e' disponibile
+  sparisce da sola.
+
+---
+
 ## v26.8.16 e v26.8.17 — 2026-08-12
 
 Chiudono l'ultimo blocco della revisione del codice. Da aggiornare insieme ai
