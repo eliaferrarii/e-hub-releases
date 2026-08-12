@@ -4,6 +4,26 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.14 — 2026-08-12
+
+**Richiede il manager 0.27.3 o successivo.**
+
+**La licenza viene verificata**
+- La risposta del server delle licenze ora e' firmata, e l'installazione la
+  verifica con una chiave scritta dentro il programma. Prima la verifica c'era
+  nel codice ma non veniva mai eseguita, e il server non firmava: chi ha
+  un'installazione in sede poteva far rispondere un finto server delle licenze
+  e sbloccarsi da solo tutti i moduli.
+
+**Cancellazione dei dati personali**
+- I caratteri jolly dentro l'identificativo cercato non venivano neutralizzati:
+  un indirizzo copiato da un browser, con dentro un `%`, produceva una ricerca
+  molto piu' larga del dovuto. In cancellazione significava perdere righe di
+  persone estranee alla richiesta, senza possibilita' di tornare indietro. La
+  ricerca parziale continua a funzionare come prima.
+
+---
+
 ## v26.8.13 — 2026-08-11
 
 **Correzione al campo introdotto nella 26.8.12**
