@@ -4,6 +4,23 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.15 — 2026-08-12
+
+**Pulizia dopo il passaggio alla 26.8.8**
+- Tolto codice rimasto senza uso dopo lo spostamento dei documenti fuori dal
+  programma principale, fra cui una funzione che costruiva percorsi su disco
+  senza controllare a dovere il nome della macchina. Non era raggiungibile,
+  ma sarebbe stata riusata cosi' com'era.
+- Nella schermata Integrazioni spariva una voce che non comandava piu' niente,
+  e che spegnendola prometteva di nascondere l'intera sezione Configurazione.
+- Il controllo automatico che sorveglia la scomparsa accidentale di funzioni
+  dava esito positivo anche su quattro funzioni rimosse mesi fa: cercava il
+  nome nel testo del programma invece delle funzioni vere.
+
+Nessun cambiamento visibile nell'uso quotidiano.
+
+---
+
 ## v26.8.14 — 2026-08-12
 
 **Richiede il manager 0.27.3 o successivo.**
