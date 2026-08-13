@@ -26,6 +26,28 @@ Secondo giro di correzioni dalla stessa revisione di sicurezza.
 
 ---
 
+## v0.37.0 — 2026-08-13
+
+Ultimo giro della revisione di sicurezza.
+
+- **Il pannello di un apparato si apre su un indirizzo suo.** Finora veniva
+  servito dallo stesso indirizzo del gestore: per il browser era la stessa
+  cosa del pannello, quindi una pagina dell'apparato poteva agire al posto
+  dell'operatore che la stava guardando. Ora ha un dominio separato e un
+  accesso a tempo, e i due non si toccano piu'.
+- **Le chiavi dei clienti non stanno piu' nella lista.** Comparivano tutte a
+  ogni apertura della pagina Licenze; adesso si copiano una alla volta, con
+  il codice 2FA, e la richiesta resta nel registro.
+- **Gli aggiornamenti delle istanze installano esattamente la versione
+  annunciata**, come gia' avviene per il gestore: se l'annuncio non e'
+  leggibile o non e' firmato, l'aggiornamento non parte.
+- **Un cliente sospeso non riceve piu' credenziali e moduli.** Prima la
+  sospensione era solo commerciale.
+- **Un codice 2FA vale una volta sola** e il reset password risponde sempre
+  allo stesso modo, cosi' non dice a nessuno quali utenti esistono.
+
+---
+
 ## v0.35.0 — 2026-08-13
 
 Quattro correzioni di sicurezza da una revisione del codice.
