@@ -4,6 +4,27 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.35.0 — 2026-08-13
+
+Quattro correzioni di sicurezza da una revisione del codice.
+
+- **Il secondo fattore non si sostituisce senza il codice corrente.** Chi
+  entrava con una sessione gia' aperta poteva rigenerare il proprio 2FA e
+  spostarlo su un altro telefono senza dimostrare di avere quello vecchio.
+  Ora serve il codice; chi ha perso l'authenticator lo fa sbloccare da un
+  amministratore, come prima.
+- **Il rimbalzo del login con Google e Microsoft controlla meglio la
+  destinazione.** Alcuni indirizzi costruiti ad arte superavano il controllo
+  e portavano la risposta del provider su un sito esterno.
+- **Un indirizzo web appartiene a un cliente solo.** Un'istanza poteva
+  dichiarare il dominio di un'altra; ora il tentativo viene rifiutato e
+  registrato.
+- **Una configurazione web rifiutata non resta sul server.** Se il proxy non
+  accetta la modifica, il file torna com'era: prima restava scritto e il
+  server non ripartiva al riavvio successivo.
+
+---
+
 ## v0.34.1 — 2026-08-13
 
 - **Il pannello non resta indietro dopo un aggiornamento.** Veniva servito
