@@ -4,6 +4,16 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.32.1 — 2026-08-13
+
+- Il pulsante **"Ricrea"** sulla riga di ogni cliente, che nella 0.32.0 era
+  rimasto senza interfaccia: l'operazione esisteva ma non era raggiungibile.
+- La ricreazione rimette in piedi l'istanza con la stessa immagine di prima,
+  invece di ripartire dal canale predefinito. Cambiare etichetta al contenitore
+  confonderebbe il meccanismo che gestisce il passaggio fra canali.
+
+---
+
 ## v0.32.0 — 2026-08-13
 
 Chiude il problema piu' grave dell'audit di sicurezza: l'isolamento fra i
