@@ -4,6 +4,20 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.20 — 2026-08-13
+
+**Aggiornamenti (solo istanze in cloud)**
+- L'aggiornamento viene chiesto al gestore, che lo fa applicare dal proprio
+  agente sul server. Stesso bottone, stessa attesa: cambia solo chi esegue.
+- Il motivo e' che prima ogni istanza riceveva il comando del motore Docker
+  del server per potersi ricreare da sola, e quel permesso vale come
+  amministratore dell'intera macchina — quindi anche sulle istanze degli altri
+  clienti che ci girano accanto. Ora non serve piu' e non viene piu' dato.
+- Sulle installazioni in sede non cambia nulla: li' la macchina e' del cliente
+  e non c'e' nessun altro accanto.
+
+---
+
 ## v26.8.19 — 2026-08-13
 
 Il programma legge testo scritto da estranei: il corpo di un ticket, una mail

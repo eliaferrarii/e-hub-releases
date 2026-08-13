@@ -4,6 +4,35 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.32.0 — 2026-08-13
+
+Chiude il problema piu' grave dell'audit di sicurezza: l'isolamento fra i
+clienti che stanno sullo stesso server.
+
+**Istanze dei clienti**
+- Ogni istanza riceveva il comando del motore Docker del server, per potersi
+  ricreare da sola quando l'admin premeva "Aggiorna ora". E' un permesso che
+  vale come amministratore dell'intera macchina: da li' si arrivava ai dati e
+  alle credenziali di tutti gli altri clienti ospitati accanto, e non serviva
+  forzare niente, bastava un programma scritto da un utente dell'istanza.
+- Adesso l'istanza **chiede** l'aggiornamento al gestore, che lo fa applicare
+  dal proprio agente. Per l'utente non cambia niente: stesso bottone, stessa
+  attesa. Cambia che quel permesso non lo ha piu' nessuna istanza.
+- Le istanze nuove nascono anche con limiti di memoria e processi, che prima
+  non c'erano.
+- **Le istanze gia' esistenti hanno ancora quel permesso**: un aggiornamento
+  normale non lo toglie, perche' ricrea l'istanza cosi' com'era. Per ognuna
+  c'e' "Ricrea" nel pannello, che la ricostruisce con le impostazioni di oggi
+  senza toccare i dati. Va fatto una volta per cliente.
+
+**Accesso alle appliance dal pannello**
+- L'apparato del cliente non puo' piu' scrivere i cookie del pannello: poteva
+  sovrascrivere la sessione dell'amministratore che lo stava guardando.
+- L'accesso al pannello di un'appliance ora chiede il secondo fattore, come
+  gia' faceva il terminale verso lo stesso apparato.
+
+---
+
 ## v0.31.0 — 2026-08-13
 
 Chiude l'ultimo problema grave dell'audit di sicurezza. Non cambia niente per
