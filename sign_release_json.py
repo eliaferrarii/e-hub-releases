@@ -54,6 +54,16 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Firma un release JSON con Ed25519.")
     ap.add_argument("--key", required=True, help="Path della private key PEM (Ed25519)")
     ap.add_argument("json_file", help="Path del release JSON da firmare (viene modificato in place)")
+    ap.add_argument(
+        "--set", action="append", default=[], metavar="CAMPO=VALORE",
+        help=(
+            "Imposta un campo prima di firmare, ripetibile. Serve soprattutto per "
+            "`--set image_digest=sha256:...`, che il workflow di build stampa nel "
+            "riepilogo: cosi' il digest entra nel payload firmato senza passare da "
+            "una modifica a mano, dove si sbaglia un carattere e la firma copre "
+            "un'immagine che non esiste."
+        ),
+    )
     args = ap.parse_args()
 
     key_path = Path(args.key).expanduser()
@@ -69,6 +79,25 @@ def main() -> None:
     if not isinstance(data, dict):
         print("ERRORE: il release JSON deve essere un oggetto", file=sys.stderr)
         sys.exit(2)
+
+    for assegnazione in args.set:
+        campo, separatore, valore = assegnazione.partition("=")
+        if not separatore:
+            print(f"ERRORE: --set vuole CAMPO=VALORE, ricevuto {assegnazione!r}", file=sys.stderr)
+            sys.exit(2)
+        campo, valore = campo.strip(), valore.strip()
+        if campo == _SIGNATURE_FIELD:
+            print("ERRORE: la firma non si imposta a mano", file=sys.stderr)
+            sys.exit(2)
+        if campo == "image_digest" and valore and not valore.startswith("sha256:"):
+            print(
+                f"ERRORE: image_digest deve iniziare per 'sha256:', ricevuto {valore!r}",
+                file=sys.stderr,
+            )
+            sys.exit(2)
+        if data.get(campo) != valore:
+            print(f"  {campo}: {data.get(campo, '(assente)')!r} -> {valore!r}")
+        data[campo] = valore
 
     signature = sign(_canonical_bytes(data), key_path)
     data[_SIGNATURE_FIELD] = signature
