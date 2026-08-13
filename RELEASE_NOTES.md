@@ -4,6 +4,16 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.23 e v26.8.24 — 2026-08-13
+
+- **Registro dei trattamenti aggiornato** con le misure introdotte in questi
+  giorni: separazione fra clienti sullo stesso server, limiti a cosa
+  un'istanza puo' mandare fuori, filtro degli inviti calendar per dominio.
+  Nessun cambiamento di funzionamento.
+- Corretti i testi delle impostazioni Mail, dove era rimasta la parola "bot".
+
+---
+
 ## v26.8.22 — 2026-08-13
 
 - **Nella sezione Aggiornamento ricompare il bottone.** Le istanze in cloud
