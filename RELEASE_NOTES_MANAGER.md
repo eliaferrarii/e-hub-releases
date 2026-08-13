@@ -4,6 +4,35 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.31.0 — 2026-08-13
+
+Chiude l'ultimo problema grave dell'audit di sicurezza. Non cambia niente per
+chi usa il pannello, tranne un pulsante in piu' sui server.
+
+**Agent dei server**
+- La lista che l'agent riceve non contiene piu' le chiavi di licenza dei
+  clienti. Il token dell'agent e' confinato al suo server, ma con quelle chiavi
+  si arrivava lontano: chi lo rubava si prendeva le licenze di tutti i clienti
+  ospitati li'. All'agent non servivano — il contenitore del cliente se la fa
+  dare da solo al primo avvio — ed e' cosi' che funziona adesso.
+- **"Ruota token"** sulla riga di ogni server: genera un token nuovo e mostra
+  il comando per riconfigurare l'agent. Prima non c'era modo di cambiarlo, e
+  l'unica strada era cancellare il server e rifarlo, perdendo lo storico.
+  Serve il secondo fattore, e l'agent va riconfigurato subito dopo.
+- Nella tabella dei server compare l'indirizzo da cui l'agent ha chiamato
+  l'ultima volta, e i tentativi di autenticazione falliti finiscono nel
+  registro delle operazioni. Prima un token in mano ad altri non lasciava
+  alcuna traccia.
+
+**Attivazione dei clienti**
+- Il codice di installazione ora si lega al primo hub che lo usa. Prima poteva
+  essere riusato da qualsiasi macchina, quante volte si voleva, e valeva
+  quanto la licenza stessa. Se un cliente va reinstallato da zero, si rigenera
+  la chiave dal pannello: azzera il collegamento e permette una nuova
+  attivazione.
+
+---
+
 ## v0.30.0 e v0.29.1 — 2026-08-13
 
 Chiudono gli ultimi due punti dell'audit di sicurezza che si potevano chiudere
