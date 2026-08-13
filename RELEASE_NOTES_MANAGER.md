@@ -4,6 +4,15 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.32.2 — 2026-08-13
+
+- **"Ricrea" rispondeva errore 500.** I due nuovi tipi di operazione erano
+  dichiarati solo dalla parte dell'agente e non da quella del gestore, che li
+  rifiutava. Corretto, con un controllo automatico che d'ora in poi verifica
+  che le due parti restino allineate.
+
+---
+
 ## v0.32.1 — 2026-08-13
 
 - Il pulsante **"Ricrea"** sulla riga di ogni cliente, che nella 0.32.0 era
