@@ -4,6 +4,15 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.34.1 — 2026-08-13
+
+- **Il pannello non resta indietro dopo un aggiornamento.** Veniva servito
+  senza indicazioni di scadenza, cosi' il browser continuava a mostrare la
+  copia vecchia: una funzione appena aggiunta sembrava non esserci e
+  l'aggiornamento sembrava fallito. Ora si ricarica da solo.
+
+---
+
 ## v0.34.0 — 2026-08-13
 
 - **"Aggiorna" sulla riga di ogni cliente.** Il gestore poteva creare,
