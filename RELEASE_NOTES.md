@@ -4,6 +4,40 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.19 — 2026-08-13
+
+Il programma legge testo scritto da estranei: il corpo di un ticket, una mail
+in arrivo, un documento caricato. Dentro quel testo puo' esserci una richiesta
+rivolta al bot invece che una domanda del cliente. Non si puo' impedire che
+venga letta; si puo' fare in modo che, se viene seguita, non ci sia niente da
+mandare fuori e nessuno a cui mandarlo.
+
+**Permessi dei bot**
+- Un bot nuovo nasce in sola lettura. Il permesso di scrivere si concede dal
+  pannello quando serve: lo richiedono le operazioni che hanno un effetto fuori
+  di qui — mandare mail, telefonare, aprire e chiudere ticket, creare ed
+  eliminare schede. I bot che esistono gia' non cambiano.
+
+**Mail**
+- Le mail partono solo verso i destinatari elencati. Prima l'elenco vuoto
+  voleva dire "qualsiasi indirizzo"; ora vuol dire "nessuno". Per permettere
+  tutti si scrive `*` fra gli indirizzi ammessi, cosi' resta una scelta e si
+  vede. Le configurazioni esistenti restano aperte come prima: nessuna mail
+  smette di partire.
+
+**Telefono**
+- Il filtro sui numeri chiamabili adesso funziona davvero. Il campo c'era, si
+  poteva compilare, e non lo leggeva nessuno: chi lo aveva impostato credeva di
+  aver chiuso una porta che restava aperta. Vale per qualsiasi chiamata
+  uscente. Anche qui le impostazioni esistenti restano come sono.
+
+**Risposte ai bot**
+- Le risposte che contengono testo scritto da altri ora lo dichiarano al bot
+  che le legge. Non e' una difesa e non viene spacciata per tale: serve
+  insieme alle due misure sopra, non al posto loro.
+
+---
+
 ## v26.8.18 — 2026-08-12
 
 **Menu**
