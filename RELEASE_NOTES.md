@@ -4,6 +4,16 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.25 — 2026-08-13
+
+- **"Manca MANAGER_URL o LICENSE_KEY" su istanze collegate.** La licenza non
+  viaggia piu' come variabile d'ambiente — veniva scritta nella riga di comando
+  che avvia il contenitore, leggibile da chi ha accesso al server — e l'istanza
+  se la fa dare dal gestore al primo avvio. Il bottone Aggiorna la cercava
+  ancora nel vecchio posto e concludeva che l'istanza fosse scollegata.
+
+---
+
 ## v26.8.23 e v26.8.24 — 2026-08-13
 
 - **Registro dei trattamenti aggiornato** con le misure introdotte in questi
