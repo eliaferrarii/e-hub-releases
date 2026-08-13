@@ -4,6 +4,19 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.33.1 e v0.33.0 — 2026-08-13
+
+- **L'aggiornamento di un'istanza rispetta il canale scelto.** Un'istanza puo'
+  girare da un'etichetta diversa dal canale che segue — e' normale, ed e' come
+  funziona il passaggio fra canali — e spostando l'aggiornamento sull'agente si
+  era persa la logica che teneva conto della differenza. Senza, un cliente su
+  stable si sarebbe ritrovato il ramo beta al primo aggiornamento.
+- L'istanza dichiara il proprio canale; l'immagine da installare la decide il
+  gestore da un elenco fisso, cosi' nessuno puo' farsi installare qualcosa di
+  arbitrario sul server che lo ospita.
+
+---
+
 ## v0.32.2 — 2026-08-13
 
 - **"Ricrea" rispondeva errore 500.** I due nuovi tipi di operazione erano

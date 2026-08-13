@@ -4,6 +4,15 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.21 — 2026-08-13
+
+- Chiedendo l'aggiornamento al gestore, l'istanza dichiara anche il canale che
+  segue. Serve perche' l'istanza puo' girare da un'etichetta diversa dal
+  canale: senza dirlo, un'istanza su stable avrebbe ricevuto il ramo beta.
+  Richiede gestore 0.33.0 o successivo.
+
+---
+
 ## v26.8.20 — 2026-08-13
 
 **Aggiornamenti (solo istanze in cloud)**
