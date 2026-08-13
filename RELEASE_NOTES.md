@@ -4,6 +4,16 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v26.8.22 — 2026-08-13
+
+- **Nella sezione Aggiornamento ricompare il bottone.** Le istanze in cloud
+  mostravano "aggiornamento manuale" e il comando da lanciare via SSH, perche'
+  il modo con cui si aggiornano adesso — chiedendolo a chi le ospita — non era
+  fra quelli riconosciuti. Ora e' indicato come "Automatico (dal server)": per
+  chi guarda resta un bottone, cambia solo chi esegue.
+
+---
+
 ## v26.8.21 — 2026-08-13
 
 - Chiedendo l'aggiornamento al gestore, l'istanza dichiara anche il canale che
