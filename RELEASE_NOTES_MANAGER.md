@@ -4,6 +4,33 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.30.0 e v0.29.1 — 2026-08-13
+
+Chiudono gli ultimi due punti dell'audit di sicurezza che si potevano chiudere
+senza rifare l'architettura.
+
+**Aggiornamenti**
+- L'aggiornamento ora installa esattamente l'immagine annunciata. Prima veniva
+  scaricata dall'etichetta `latest`, che e' un puntatore mobile: la firma
+  dimostrava che una versione nuova esisteva, non che fosse quella a finire sul
+  server. Adesso l'identificativo dell'immagine viaggia dentro l'annuncio
+  firmato, viene verificato dopo il download, e il programma che ricrea il
+  contenitore non torna a scaricare niente per conto suo.
+- Un annuncio senza identificativo si aggiorna come prima: chi ha un manager
+  vecchio non resta bloccato. Nei log resta scritto che quel giro non era
+  ancorato.
+
+**Autenticazione a due fattori**
+- Il codice QR per attivare il secondo fattore lo disegna il manager. Prima lo
+  costruiva il browser chiamando un servizio esterno, e nell'indirizzo della
+  richiesta c'era il segreto in chiaro: a ogni attivazione finiva nei registri
+  di accesso di terzi. Chi lo possiede genera codici validi, e il secondo
+  fattore e' cio' che autorizza tutte le operazioni delicate.
+- Se la libreria che disegna i QR non e' installata, il codice non compare e
+  resta l'inserimento manuale, che funziona da sempre.
+
+---
+
 ## v0.29.0 — 2026-08-12
 
 Terzo e ultimo blocco delle correzioni uscite dall'audit di sicurezza del 12
