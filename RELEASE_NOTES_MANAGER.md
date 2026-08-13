@@ -4,6 +4,28 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.36.0 — 2026-08-13
+
+Secondo giro di correzioni dalla stessa revisione di sicurezza.
+
+- **Le modifiche ai segreti condivisi chiedono il codice 2FA.** Cambiare o
+  rimuovere una credenziale di sistema, e riconfigurare la casella delle
+  trascrizioni, si faceva con la sola sessione aperta — mentre operazioni
+  molto meno delicate il codice lo chiedevano gia'.
+- **Chi viene declassato perde subito il terminale.** Il permesso per aprire
+  una shell su un'appliance veniva letto dalla sessione invece che dal
+  registro utenti: un amministratore passato a sola lettura restava dentro
+  fino alla scadenza della sessione.
+- **L'indirizzo di chi si collega non e' piu' dichiarabile dal chiamante.**
+  Veniva preso dal primo valore inoltrato, che il client puo' scrivere: i
+  limiti sui tentativi di accesso si aggiravano cambiandolo a ogni
+  richiesta, e nel registro delle attivita' finiva un indirizzo inventato.
+- **Il terminale non carica piu' codice da un servizio esterno.** Le
+  librerie della console arrivavano da una rete di distribuzione pubblica;
+  ora sono servite dal manager stesso.
+
+---
+
 ## v0.35.0 — 2026-08-13
 
 Quattro correzioni di sicurezza da una revisione del codice.
