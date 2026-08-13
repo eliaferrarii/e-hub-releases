@@ -4,6 +4,16 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.34.0 — 2026-08-13
+
+- **"Aggiorna" sulla riga di ogni cliente.** Il gestore poteva creare,
+  cancellare e ricreare un'istanza, ma non aggiornarla: l'aggiornamento
+  partiva solo da dentro. Se un'istanza e' vecchia o non mostra il proprio
+  bottone, l'unica strada era collegarsi al server. Ora si fa da qui, con il
+  secondo fattore.
+
+---
+
 ## v0.33.1 e v0.33.0 — 2026-08-13
 
 - **L'aggiornamento di un'istanza rispetta il canale scelto.** Un'istanza puo'
