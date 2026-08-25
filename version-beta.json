@@ -6,5 +6,6 @@
   "release_notes_url": "https://github.com/eliaferrarii/e-hub-releases/blob/main/RELEASE_NOTES_BETA.md",
   "min_version_required": "3.0.0",
   "channel": "beta",
-  "signature": "c+3jNvMmcDnLsC399RK55BHioTWj3GcKXACFmMEBZ2ktssWBqULxnXtF7oBODmUCYEiLIcbnswKLxcHBmQ9fDA=="
+  "signature": "0eEfiBFMpuNsG1mq7jEmzHAjDHpzc3yAF/FdTs6wswIS06TuPx6pW8pqn6pjwpVByyEkl+hsbBmnJdS1141GCA==",
+  "image_digest": "sha256:c991f0e0bb8a813afb265e2b857b97bfc614dfd452a81ce55a8c09852dedb666"
 }
