@@ -4,6 +4,13 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.37.26 — 2026-10-19
+
+- **Nuovo modulo Zoho nelle licenze.** Il collegamento a Zoho Desk, CRM e
+  Creator diventa un modulo a se': lo usano Maia, il Magazzino e gli
+  strumenti dell'assistente. Va abilitato nella licenza del cliente per
+  comparire nello Store.
+
 ## v0.36.0 — 2026-08-13
 
 Secondo giro di correzioni dalla stessa revisione di sicurezza.
