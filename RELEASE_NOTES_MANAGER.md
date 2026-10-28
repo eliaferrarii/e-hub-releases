@@ -4,6 +4,20 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.39.0 — 2026-10-28
+
+- **Nuovo menu Backup.** Esporta tutti i dati del manager in un file cifrato
+  con una passphrase scelta da chi lo scarica, e lo ripristina su un altro
+  manager. Esportazione e ripristino chiedono il codice 2FA; il ripristino
+  sostituisce tutti i dati in un colpo solo o non tocca nulla.
+
+## v0.38.0 — 2026-10-28
+
+- **Il manager puo' girare su Kubernetes.** Archivio dati su Postgres (oltre al
+  file locale di sempre), piu' copie in parallelo con limiti condivisi, e un
+  interruttore per spegnere le funzioni che servono solo alle installazioni
+  su server dedicato.
+
 ## v0.37.26 — 2026-10-19
 
 - **Nuovo modulo Zoho nelle licenze.** Il collegamento a Zoho Desk, CRM e
