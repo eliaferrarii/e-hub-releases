@@ -4,6 +4,13 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.40.1 — 2026-10-29
+
+- **Sicurezza.** La chiave di licenza non esce piu' da nessuna risposta del
+  pannello, tranne «mostra chiave» (con 2FA) e la rigenerazione; il registro
+  delle pagine di ritorno dell'accesso non si gonfia piu' con richieste finte;
+  il controllo di prontezza non elenca i componenti interni.
+
 ## v0.40.0 — 2026-10-29
 
 - **Sicurezza.** La chiave di licenza non compare piu' nel dettaglio del
