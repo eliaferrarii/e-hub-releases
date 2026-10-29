@@ -4,6 +4,15 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.40.0 — 2026-10-29
+
+- **Sicurezza.** La chiave di licenza non compare piu' nel dettaglio del
+  tenant; le pagine di ritorno dell'accesso hanno un limite di richieste e non
+  riempiono piu' il registro, che ora tiene 12 mesi di storico; documentazione
+  delle API spenta e controllo di stato senza versione.
+- **Dominio del tenant nella licenza**, usato da Mosaico per i link nelle mail.
+- Dopo un ripristino si chiudono anche le sessioni aperte nello stesso secondo.
+
 ## v0.39.0 — 2026-10-28
 
 - **Nuovo menu Backup.** Esporta tutti i dati del manager in un file cifrato
