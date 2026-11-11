@@ -4,6 +4,21 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.40.12 — 2026-11-11
+
+- **Catalogo delle tessere ripulito** (0.40.11): tolti gli id del monolite
+  che il core non conosce piu' e quattro tessere mai portate. Le licenze gia'
+  salvate restano valide: gli id tolti si ignorano. Piani «basic» e «pro»
+  rifatti con tessere esistenti.
+- **Tolto l'auto-aggiornamento del container** e la pagina «Aggiornamento»:
+  il manager si aggiorna da GitOps.
+- **Vault**: tolte le chiavi dei provider AI esterni, delle trascrizioni e
+  del traduttore (i valori salvati vengono cancellati).
+- **Database**: eliminate le tabelle di agent, server, VPN e casella degli
+  inviti, non piu' usate dalla 0.40.9.
+- **Consenso personale Zoho** (0.40.11): gli errori arrivano al ponte del
+  tenant. Versione propria 0.40.12 per distinguere le due 0.40.11.
+
 ## v0.40.10 — 2026-11-11
 
 - **Collegamento Microsoft** dal callback del login, con una versione propria
