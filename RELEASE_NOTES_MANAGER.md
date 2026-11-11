@@ -4,6 +4,16 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.40.7 — 2026-11-11
+
+- **Tessera MCP** nel catalogo delle licenze (0.40.7).
+- **Sicurezza** (0.40.6): indirizzi d'origine con controlli piu' stretti,
+  dominio del tenant non piu' modificabile dopo la registrazione, stato del
+  collegamento Zoho condiviso fra le repliche, protezione dalle richieste
+  da altri siti, indirizzo del client letto solo dal proxy fidato.
+- **Tessere Citofoni e accessi, Report e Rete** nel catalogo delle licenze
+  (0.40.4, 0.40.5).
+
 ## v0.40.1 — 2026-10-29
 
 - **Sicurezza.** La chiave di licenza non esce piu' da nessuna risposta del
