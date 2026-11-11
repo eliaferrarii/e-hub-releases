@@ -4,6 +4,19 @@ Note di rilascio leggibili. Le voci sono ordinate dalla piu' recente alla piu' v
 
 ---
 
+## v0.40.10 — 2026-11-11
+
+- **Collegamento Microsoft** dal callback del login, con una versione propria
+  (0.40.9, 0.40.10).
+- **Funzioni tolte** (0.40.9): VPN delle appliance (peer, terminale SSH,
+  proxy), installazione con agent (server, task, aggiornamento e ricreazione
+  dei tenant via agent) e casella degli inviti delle trascrizioni. Le
+  tabelle restano nel database e nel backup.
+- **Nomi** (0.40.8): «tessere» al posto di «moduli» e «Mosaico» al posto di
+  «hub» in tutto il pannello, nelle mail e nell'app di autenticazione.
+- **Correzione**: un apice nel testo della rigenerazione della chiave
+  fermava lo script del pannello (0.40.8).
+
 ## v0.40.7 — 2026-11-11
 
 - **Tessera MCP** nel catalogo delle licenze (0.40.7).
